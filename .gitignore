@@ -180,4 +180,7 @@ pyrightconfig.json
 # End of https://www.toptal.com/developers/gitignore/api/python
 
 app.py
+faust_test.py
+producer.py
+schemas/
 .gitignore
