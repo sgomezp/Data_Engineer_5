@@ -1,4 +1,4 @@
-from kafka import KafkaProducer
+from kafka import KafkaProducer, KafkaConsumer
 from data_generator import RandomDataGenerator
 import json
 
@@ -9,7 +9,6 @@ def make_producer(host):
 def send_random(producer):
     for msg in RandomDataGenerator():
         producer.send("probando", msg)
-        print("Sent")
 
 def main():
     producer = make_producer(host="kafka:9092")

@@ -1,8 +1,8 @@
-FROM python:3.10
+FROM python:3.11
 
 WORKDIR /usr/src/app
 
-RUN pip install --no-cache-dir kafka-python Faker
+RUN pip install --no-cache-dir kafka-python Faker pymongo
 
 COPY . .
 

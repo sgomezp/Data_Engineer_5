@@ -5,4 +5,3 @@ consumer = KafkaConsumer("probando", bootstrap_servers=['localhost:29092'], valu
 
 for msg in consumer:
     print(msg.value)
-    print("recibido")
